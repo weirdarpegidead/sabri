@@ -1,0 +1,63 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+/* === header === */
+.logo {
+  background: black; }
+.logo .menu li a {
+  color: white;  }
+.logo .imago {
+  position: relative;  }
+.logo .imago img {
+  z-index: 9999999999999;
+  position: absolute; }
+
+/* === navegacion === */
+.nav {
+  background: #f1f1f1; }
+.nav .menu li a {
+  font-size: 2rem;
+  color: black; }
+/* === footer ==== */
+.footer {
+  padding-top: 3rem;
+  background: black; }
+.footer h3 {
+  color: white; }
+.footer .menu li a {
+  color: white; }
+
+/* ============================ */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 1024px) {
+
+
+
+}
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 640px) {
+
+
+
+}
+
+ /*========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+
+}
