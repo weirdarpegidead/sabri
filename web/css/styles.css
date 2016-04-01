@@ -28,6 +28,60 @@
 .footer .menu li a {
   color: white; }
 
+/* === efecto === */
+.efecto div {
+  background: rgba(1, 1, 1, 1);
+  border-top: 5px solid #FEBE10;
+  transition:All 0.5s ease;
+  -webkit-transition:All 0.5s ease;
+  -moz-transition:All 0.5s ease;
+  -o-transition:All 0.5s ease; }
+.efecto div:hover {
+  border-top: 5px solid #2F549E; }
+.efecto h6 {
+  /*position: absolute;*/
+  bottom: 40px;
+  left: 32px;
+  color: white;
+  padding: 0.6rem;
+  transition:All 0.5s ease;
+  -webkit-transition:All 0.5s ease;
+  -moz-transition:All 0.5s ease;
+  -o-transition:All 0.5s ease; }
+.efecto div:hover h6 {
+  color: #2F549E;
+  bottom: 70px; }
+.efecto h6.small {
+  /*position: absolute;*/
+  bottom: 40px;
+  left: 32px;
+  padding: 0.6rem;
+  opacity: 0;
+  font-size: 0.75rem;
+  transition:All 0.5s ease;
+  -webkit-transition:All 0.5s ease;
+  -moz-transition:All 0.5s ease;
+  -o-transition:All 0.5s ease; }
+.efecto div:hover h6.small {
+  /*position: absolute;*/
+  bottom: 40px;
+  left: 32px;
+  color: #2F549E;
+  padding: 0.6rem;
+  opacity: 1;
+  transition:All 0.5s ease;
+  -webkit-transition:All 0.5s ease;
+  -moz-transition:All 0.5s ease;
+  -o-transition:All 0.5s ease; }
+.efecto img {
+  opacity: 0.7;
+  transition:All 0.5s ease;
+  -webkit-transition:All 0.5s ease;
+  -moz-transition:All 0.5s ease;
+  -o-transition:All 0.5s ease; }
+.efecto img:hover {
+  opacity: 1; }
+
 /* ============================ */
 /* ! Layout for mobile version   */
 /* ============================= */
