@@ -39,11 +39,10 @@
 .efecto div:hover {
   border-top: 5px solid #2F549E; }
 .efecto h6 {
-  /*position: absolute;*/
-  bottom: 40px;
-  left: 32px;
+  position: absolute;
+  bottom: 9rem;
+  left: 1rem;
   color: white;
-  padding: 0.6rem;
   transition:All 0.5s ease;
   -webkit-transition:All 0.5s ease;
   -moz-transition:All 0.5s ease;
@@ -52,10 +51,9 @@
   color: #2F549E;
   bottom: 70px; }
 .efecto h6.small {
-  /*position: absolute;*/
-  bottom: 40px;
+  position: absolute;
+  bottom: 8rem;
   left: 32px;
-  padding: 0.6rem;
   opacity: 0;
   font-size: 0.75rem;
   transition:All 0.5s ease;
@@ -63,11 +61,10 @@
   -moz-transition:All 0.5s ease;
   -o-transition:All 0.5s ease; }
 .efecto div:hover h6.small {
-  /*position: absolute;*/
-  bottom: 40px;
+  position: absolute;
+  bottom: 6rem;
   left: 32px;
   color: #2F549E;
-  padding: 0.6rem;
   opacity: 1;
   transition:All 0.5s ease;
   -webkit-transition:All 0.5s ease;
@@ -81,6 +78,8 @@
   -o-transition:All 0.5s ease; }
 .efecto img:hover {
   opacity: 1; }
+.efect {
+  position: relative; }
 
 /* ============================ */
 /* ! Layout for mobile version   */
