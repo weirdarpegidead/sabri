@@ -28,6 +28,14 @@
 .footer .menu li a {
   color: white; }
 
+/* === disclaimer === */
+.disclaimer {
+  background-color: white; }
+.disclaimer p {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: #333333; }
+
 /* === efecto === */
 .sin-padding {
   padding: 0; }
@@ -85,7 +93,7 @@
   position: relative;
   border-top: none !important; }
 
-  /* === efecto2 === */
+/* === efecto2 === */
 .efecto2 div {
   background: rgba(1, 1, 1, 1);
   border-top: 5px solid #FEBE10;
@@ -118,6 +126,51 @@
 .efect2 {
   position: relative;
   border-top: none !important; }
+
+/* === input custom === */
+.custom[type='text'], .custom[type='password'], .custom[type='date'], .custom[type='datetime'], .custom[type='datetime-local'], .custom[type='month'], .custom[type='week'], .custom[type='email'], .custom[type='number'], .custom[type='search'], .custom[type='tel'], .custom[type='time'], .custom[type='url'], .custom[type='color'],.custom textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 2.4375rem;
+  padding: 0.5rem;
+  border: 1px solid #cacaca;
+  margin: 0 0 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #777777;
+  background-color: black;
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+  border-radius: 0;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+  .custom[type='text']:focus, .custom[type='password']:focus, .custom[type='date']:focus, .custom[type='datetime']:focus, .custom[type='datetime-local']:focus, .custom[type='month']:focus, .custom[type='week']:focus, .custom[type='email']:focus, .custom[type='number']:focus, .custom[type='search']:focus, .custom[type='tel']:focus, .custom[type='time']:focus, .custom[type='url']:focus, .custom[type='color']:focus, .custom textarea:focus {
+    border: 1px solid #8a8a8a;
+    background-color: black;
+    outline: none;
+    box-shadow: 0 0 5px #cacaca;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out; }
+.custom textarea {
+  max-width: 100%; }
+  .custom textarea[rows] {
+    height: auto; }
+.custom input::-webkit-input-placeholder,
+.custom textarea::-webkit-input-placeholder {
+  color: #cacaca; }
+.custom input::-moz-placeholder,
+.custom textarea::-moz-placeholder {
+  color: #cacaca; }
+.custom input:-ms-input-placeholder,
+.custom textarea:-ms-input-placeholder {
+  color: #cacaca; }
+.custom input::placeholder,
+.custom textarea::placeholder {
+  color: #cacaca; }
+.custom.input-group-field {
+  margin: 0;
+  display: table-cell;
+  vertical-align: middle; }
 
 /* ============================ */
 /* ! Layout for mobile version   */
