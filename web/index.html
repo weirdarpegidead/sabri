@@ -11,18 +11,27 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
+    <!-- visivilidad
+    <div class="expanded row">
+      <div class="large-12 columns text-center">
+        <p class="show-for-large">LARGE</p>
+        <p class="show-for-medium-only">MEDIUM</p>
+        <p class="show-for-small-only">SMALL</p>
+      </div>
+    </div> -->
     <!-- seccion social -->
     <div class="expanded row logo">
-      <div class="large-4 columns imago"><img src="http://placehold.it/200x200"></div>
-      <div class="large-4 columns large-offset-4">
+      <div class="medium-4 large-4 columns hide-for-small-only imago"><img src="http://placehold.it/200x200"></div>
+      <div class="small-12 columns show-for-small-only text-center"><img src="http://placehold.it/200x200"></div>
+      <div class="medium-9 large-6 columns medium-offset-3 large-offset-3 hide-for-small-only">
         <ul class="menu align-right">
           <li><a href="#">CONTACTO</a></li>
           <li><a href="#">12312564987</a></li>
           <li><a href="#">CONTACTO@TIENDA.CL</a></li>
         </ul>
       </div>
-      <div class="large-4 columns">
-        <ul class="menu">
+      <div class="medium-12 large-3 columns hide-for-small-only">
+        <ul class="menu align-right">
           <li><a href="#"><i class="fi-social-facebook"></i></a></li>
           <li><a href="#"><i class="fi-social-twitter"></i></a></li>
           <li><a href="#"><i class="fi-social-youtube"></i></a></li>
@@ -33,7 +42,22 @@
     </div>
     <!-- navegacion -->
     <div class="expanded row nav">
-      <div class="large-10 columns">
+      <div class="medium-9 large-12 medium-offset-3 large-offset-0 columns hide-for-small-only">
+        <ul class="menu align-right">
+          <li><a href="#">TIENDA</a></li>
+          <li><a href="#">ARTISTAS</a></li>
+          <li><a href="#">GENEROS</a></li>
+          <li><a href="#">CONTACTO</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- navegacion movil -->
+    <div class="title-bar text-right show-for-small-only" data-responsive-toggle="example-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+    <div class="top-bar show-for-small-only" id="example-menu">
+      <div class="top-bar-right">
         <ul class="menu align-right">
           <li><a href="#">TIENDA</a></li>
           <li><a href="#">ARTISTAS</a></li>
@@ -43,7 +67,7 @@
       </div>
     </div>
     <!-- slide -->
-    <div class="expanded row">
+    <div class="expanded row hide-for-small-only">
       <div class="large-12 columns">
         <img src="img/slide1.jpg">
       </div>
@@ -53,30 +77,30 @@
       <div class="large-12 columns sin-padding">
         <h1 class="text-center">TOP VENTAS</h1>
         <div class="expanded row">
-          <div class="large-4 columns efecto sin-padding">
+          <div class="small-4 medium-4 large-4 columns efecto sin-padding">
             <div>
               <a href="#"><img src="img/748.jpg"></a>
               <div class="efect">
-                <h3>NOMBRE DEL DISCO</h3>
-                <h3 class="small">ARTISTA</h3>
+                <h5>NOMBRE DEL DISCO</h5>
+                <h5 class="small">ARTISTA</h5>
               </div>
             </div>
           </div>
-          <div class="large-4 columns efecto sin-padding">
+          <div class="small-4 medium-4 large-4 columns efecto sin-padding">
             <div>
               <a href="#"><img src="img/748.jpg"></a>
               <div class="efect">
-                <h3>NOMBRE DEL DISCO</h3>
-                <h3 class="small">ARTISTA</h3>
+                <h5>NOMBRE DEL DISCO</h5>
+                <h5 class="small">ARTISTA</h5>
               </div>
             </div>
           </div>
-          <div class="large-4 columns efecto sin-padding">
+          <div class="small-4 medium-4 large-4 columns efecto sin-padding">
             <div>
               <a href="#"><img src="img/748.jpg"></a>
               <div class="efect">
-                <h3>NOMBRE DEL DISCO</h3>
-                <h3 class="small">ARTISTA</h3>
+                <h5>NOMBRE DEL DISCO</h5>
+                <h5 class="small">ARTISTA</h5>
               </div>
             </div>
           </div>
@@ -88,30 +112,30 @@
       <div class="large-12 columns sin-padding">
         <h1 class="text-center">NOVEDADES</h1>
         <div class="expanded row">
-          <div class="large-4 columns efecto sin-padding">
+          <div class="small-4 medium-4 large-4 columns efecto sin-padding">
             <div>
               <a href="#"><img src="img/748.jpg"></a>
               <div class="efect">
-                <h3>NOMBRE DEL DISCO</h3>
-                <h3 class="small">ARTISTA</h3>
+                <h5>NOMBRE DEL DISCO</h5>
+                <h5 class="small">ARTISTA</h5>
               </div>
             </div>
           </div>
-          <div class="large-4 columns efecto sin-padding">
+          <div class="small-4 medium-4 large-4 columns efecto sin-padding">
             <div>
               <a href="#"><img src="img/748.jpg"></a>
               <div class="efect">
-                <h3>NOMBRE DEL DISCO</h3>
-                <h3 class="small">ARTISTA</h3>
+                <h5>NOMBRE DEL DISCO</h5>
+                <h5 class="small">ARTISTA</h5>
               </div>
             </div>
           </div>
-          <div class="large-4 columns efecto sin-padding">
+          <div class="small-4 medium-4 large-4 columns efecto sin-padding">
             <div>
               <a href="#"><img src="img/748.jpg"></a>
               <div class="efect">
-                <h3>NOMBRE DEL DISCO</h3>
-                <h3 class="small">ARTISTA</h3>
+                <h5>NOMBRE DEL DISCO</h5>
+                <h5 class="small">ARTISTA</h5>
               </div>
             </div>
           </div>
@@ -120,34 +144,34 @@
     </div>
     <!-- seccion inferior -->
     <div class="expanded row">
-      <div class="large-4 columns efecto2 sin-padding">
+      <div class="small-4 medium-4 large-4 columns efecto2 sin-padding">
         <div>
           <a href="#"><img src="http://placehold.it/1000x1000"></a>
           <div class="efect2">
-            <h3>VINILOS</h3>
+            <h5>VINILOS</h5>
           </div>
         </div>
       </div>
-      <div class="large-4 columns efecto2 sin-padding">
+      <div class="small-4 medium-4 large-4 columns efecto2 sin-padding">
         <div>
           <a href="#"><img src="http://placehold.it/1000x1000"></a>
           <div class="efect2">
-            <h3>TOCA DISCOS</h3>
+            <h5>TOCA DISCOS</h5>
           </div>
         </div>
       </div>
-      <div class="large-4 columns efecto2 sin-padding">
+      <div class="small-4 medium-4 large-4 columns efecto2 sin-padding">
         <div>
           <a href="#"><img src="http://placehold.it/1000x1000"></a>
           <div class="efect2">
-            <h3>BLOG</h3>
+            <h5>BLOG</h5>
           </div>
         </div>
       </div>
     </div>
     <!-- footer -->
     <div class="expanded row footer">
-      <div class="large-4 columns">
+      <div class="medium-4 large-4 columns">
         <h3 class="text-center">NAVEGACIÓN</h3>
         <div class="row">
           <div class="large-12 columns">
@@ -160,7 +184,7 @@
           </div>
         </div>
       </div>
-      <div class="large-4 columns">
+      <div class="medium-4 large-4 columns">
         <h3 class="text-center">NEWSLETTER</h3>
         <form>
           <div class="row">
@@ -173,7 +197,7 @@
           </div>
         </form>
       </div>
-      <div class="large-4 columns">
+      <div class="medium-4 large-4 columns">
         <h3 class="text-center">SÍGUENOS</h3>
         <div class="row">
           <div class="large-12 columns menu-centered">
