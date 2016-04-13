@@ -20,6 +20,9 @@
 .nav .menu li a {
   font-size: 2rem;
   color: black; }
+/* === contenido === */
+.blog {
+  margin-bottom: 2rem; }
 /* === footer ==== */
 .footer {
   padding-top: 3rem;
@@ -28,7 +31,6 @@
   color: white; }
 .footer .menu li a {
   color: white; }
-
 /* === disclaimer === */
 .disclaimer {
   background-color: white; }
@@ -36,7 +38,6 @@
   margin-top: 1rem;
   font-size: 0.75rem;
   color: #333333; }
-
 /* === efecto === */
 .sin-padding {
   padding: 0; }
@@ -87,7 +88,6 @@
 .efect {
   position: relative;
   border-top: none !important; }
-
 /* === efecto2 === */
 .efecto2 div {
   background: rgba(1, 1, 1, 1);
@@ -117,7 +117,6 @@
 .efect2 {
   position: relative;
   border-top: none !important; }
-
 /* === input custom === */
 .custom[type='text'], .custom[type='password'], .custom[type='date'], .custom[type='datetime'], .custom[type='datetime-local'], .custom[type='month'], .custom[type='week'], .custom[type='email'], .custom[type='number'], .custom[type='search'], .custom[type='tel'], .custom[type='time'], .custom[type='url'], .custom[type='color'],.custom textarea {
   display: block;
