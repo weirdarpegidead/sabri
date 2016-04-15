@@ -1,7 +1,6 @@
 /* ============================== */
 /* ! Layout for desktop version   */
 /* ============================== */
-
 /* === header === */
 .logo {
   background: black; }
@@ -161,13 +160,10 @@
   margin: 0;
   display: table-cell;
   vertical-align: middle; }
-
-/* ============================ */
+/* ============================  */
 /* ! Layout for mobile version   */
 /* ============================= */
-
 @media handheld, only screen and (max-width: 1024px) {
-
 /* === efecto === */
 .efecto div {
   background: rgba(1, 1, 1, 1);
@@ -243,29 +239,12 @@
 .efect2 {
   position: relative;
   border-top: none !important; }
-
 }
-
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */
-
-@media handheld, only screen and (max-width: 640px) {
-
-
-
-}
-
- /*========================================== */
+@media handheld, only screen and (max-width: 640px) {}
+/* ========================================== */
 /* ! Provide higher res assets for iPhone 4   */
 /* ========================================== */
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
-
-/*	.logo {
-		background: url(logo2x.jpg) no-repeat;
-		background-size: 212px 303px;
-	}*/
-
-
-}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {}
