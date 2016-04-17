@@ -42,12 +42,18 @@
     <!-- navegacion -->
     <div class="expanded row nav">
       <div class="medium-9 large-12 medium-offset-3 large-offset-0 columns hide-for-small-only">
-        <ul class="menu align-right">
+        <!--<ul class="menu align-right">
           <li><a href="#">TIENDA</a></li>
           <li><a href="#">ARTISTAS</a></li>
           <li><a href="#">GENEROS</a></li>
           <li><a href="#">CONTACTO</a></li>
-        </ul>
+        </ul>-->
+        <?php wp_nav_menu(
+          array(
+          'container' => false,
+          'items_wrap' => '<ul class="menu align-right">%3$s</ul>',
+          'theme_location' => 'menu_principal'
+          )); ?>
       </div>
     </div>
     <!-- navegacion movil -->
@@ -57,11 +63,17 @@
     </div>
     <div class="top-bar show-for-small-only" id="example-menu">
       <div class="top-bar-right">
-        <ul class="menu align-right">
+        <!--<ul class="menu align-right">
           <li><a href="#">TIENDA</a></li>
           <li><a href="#">ARTISTAS</a></li>
           <li><a href="#">GENEROS</a></li>
           <li><a href="#">CONTACTO</a></li>
-        </ul>
+        </ul>-->
+        <?php wp_nav_menu(
+          array(
+          'container' => false,
+          'items_wrap' => '<ul class="menu align-right">%3$s</ul>',
+          'theme_location' => 'menu_movil'
+          )); ?>
       </div>
     </div>

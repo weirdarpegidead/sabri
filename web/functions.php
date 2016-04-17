@@ -1,54 +1,26 @@
 <?php
-
 /*=== Soporte para thumbnail ==*/
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'homepage-thumb', 0, 0, true );
-add_image_size( 'testimonios', 150, 50, true);
-
+add_image_size( 'slide', 0, 0, true );
+add_image_size( 'home', 700, 700, true);
 /*=== sacar barra de admin ==*/
 add_filter( 'show_admin_bar', '__return_false' );
-
-/*=== registro primer menu inferior ===
-register_nav_menus ( array(
-  'menu-bottom_1' => 'menu_inferior_1',
-  'menu' => 'menu_ingenieria'
-  ));
-
-/*=== registro segundo menu inferior ===
-register_nav_menus ( array(
-  'menu-bottom_2' => 'menu_inferior_2',
-  'menu' => 'menu_arquitectura'
-  ));
-
-/*=== registro tercer menu inferior ===
-register_nav_menus ( array(
-  'menu-bottom_3' => 'menu_inferior_3',
-  'menu' => 'menu_cchc'
-  ));
-
-/*=== registro menu del footer ===
-register_nav_menus ( array(
-  'menu_footer' => 'menu_inferior',
-  'menu' => 'footer'
-  ));
-
-/*=== registro menu del principal ===*/
+/*=== registro de menus ===*/
 register_nav_menus ( array(
     'menu_principal' => 'menu_header'
+    'menu_movil' => 'movil'
+    'menu_inferior' => 'menu_footer'
     ));
-
 /*=== agrego una extencion para el excerpt personalizada ===
 function custom_excerpt_length( $length ) {
   return 20;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );*/
-
 /*=== saco el tag "more" ===
 function new_excerpt_more( $more ) {
   return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');*/
-
 /*=== agrego una funcion para poder parametrar el excerpt ===*/
 function my_excerpt($excerpt_length = 40, $id = false, $echo = true) {
          
@@ -81,41 +53,22 @@ function my_excerpt($excerpt_length = 40, $id = false, $echo = true) {
         else
         return $text;
 }
- 
 function get_my_excerpt($excerpt_length = 10, $id = false, $echo = false) {
  return my_excerpt($excerpt_length, $id, $echo);
 }
-
 /*
  * Función para imprimir la ruta de la imagen destacada.
  * Ejemplo de utilización: echo atrib_imagen_destacada();
- 
 function atrib_imagen_destacada() {
     global $post;
     $thumbID = get_post_thumbnail_id( $post->ID );
     $imgDestacada = wp_get_attachment_image_src( $thumbID, 'full' ); // Sustituir por thumbnail, medium, large o full
     return $imgDestacada[0]; // 0 = ruta, 1 = altura, 2 = anchura, 3 = boolean
 }
-
-/*=== Declaracion de widget para "formulario-lateral" === */
+/*=== Declaracion de widget para "formulario-lateral" ===
 register_sidebar(array(
  'name' => 'formulario-lateral',
  'before_widget' => '<div class="large-12 columns">',
  'after_widget' => '</div>',
  ));
-
-/*=== Declaracion de widget para "fechas y postulaciones"===
-register_sidebar(array(
- 'name' => 'postulaciones',
- 'before_widget' => '<div class="large-12 small-12 columns text-center postula">',
- 'after_widget' => '</div>',
- ));
-
-/*=== Declaracion de widget para "formulario lateral"===
-register_sidebar(array(
- 'name' => 'formulario-lateral',
- 'before_widget' => '<div class="formWrap">',
- 'after_widget' => '</div>',
- ));
-
 */?>

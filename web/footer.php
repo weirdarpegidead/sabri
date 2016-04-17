@@ -4,12 +4,18 @@
         <h3 class="text-center">NAVEGACIÓN</h3>
         <div class="row">
           <div class="large-12 columns">
-            <ul class="menu menu-centered vertical">
+            <!--<ul class="menu menu-centered vertical">
               <li><a href="#">One</a></li>
               <li><a href="#">Two</a></li>
               <li><a href="#">Three</a></li>
               <li><a href="#">Four</a></li>
-            </ul>
+            </ul>-->
+            <?php wp_nav_menu(
+              array(
+              'container' => false,
+              'items_wrap' => '<ul class="menu menu-centered vertical">%3$s</ul>',
+              'theme_location' => 'menu_inferior'
+              )); ?>
           </div>
         </div>
       </div>
