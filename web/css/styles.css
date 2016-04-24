@@ -50,6 +50,7 @@
   position: absolute;
   opacity: 0;
   bottom: 11rem;
+  padding-left: 1rem;
   color: white;
   transition:All 0.5s ease;
   -webkit-transition:All 0.5s ease;
@@ -87,6 +88,11 @@
 .efect {
   position: relative;
   border-top: none !important; }
+.post-meta .post-meta-key {
+  display: none; }
+ul.post-meta {
+  list-style-type: none;
+  margin-left: 0; }
 /* === efecto2 === */
 .efecto2 div {
   background: rgba(1, 1, 1, 1);
@@ -94,15 +100,16 @@
   -webkit-transition:All 0.5s ease;
   -moz-transition:All 0.5s ease;
   -o-transition:All 0.5s ease; }
-.efecto2 h5 {
+.efecto2 h2 {
   position: absolute;
   bottom: 3rem;
   color: white;
+  padding-left: 1rem;
   transition:All 0.5s ease;
   -webkit-transition:All 0.5s ease;
   -moz-transition:All 0.5s ease;
   -o-transition:All 0.5s ease; }
-.efecto2 div:hover h5 {
+.efecto2 div:hover h2 {
   color: white;
   bottom: 5rem; }
 .efecto2 img {

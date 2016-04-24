@@ -10,24 +10,24 @@
         </li>
         <?php endwhile; wp_reset_query(); ?>
       </ul>
-      <nav class="orbit-bullets">
+      <!--<nav class="orbit-bullets">
         <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
         <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-      </nav>
+      </nav>-->
     </div>
     <!-- top ventas -->
     <div class="expanded row">
       <div class="large-12 columns sin-padding">
         <h1 class="text-center">TOP VENTAS</h1>
         <div class="expanded row">
-          <?php query_posts('category_name=productos' ); while ( have_posts() ) : the_post(); ?>
+          <?php query_posts('category_name=top-ventas&posts_per_page=3' ); while ( have_posts() ) : the_post(); ?>
           <div class="small-4 medium-4 large-4 columns efecto sin-padding">
             <div>
               <a href="<?php echo get_permalink(); ?>">
                 <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'home' ); } ?>
                 <div class="efect">
                   <h5><?php the_title(); ?></h5>
-                  <h5 class="small">ARTISTA</h5>
+                  <h5 class="small"><small><?php the_meta(); ?></small></h5>
                 </div>
               </a>
             </div>
@@ -41,14 +41,14 @@
       <div class="large-12 columns sin-padding">
         <h1 class="text-center">NOVEDADES</h1>
         <div class="expanded row">
-          <?php query_posts('category_name=productos' ); while ( have_posts() ) : the_post(); ?>
+          <?php query_posts('category_name=novedades&posts_per_page=3' ); while ( have_posts() ) : the_post(); ?>
           <div class="small-4 medium-4 large-4 columns efecto sin-padding">
             <div>
               <a href="<?php echo get_permalink(); ?>">
                 <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'home' ); } ?>
                 <div class="efect">
                   <h5><?php the_title(); ?></h5>
-                  <h5 class="small">ARTISTA</h5>
+                  <h5 class="small"><small><?php the_meta(); ?></small></h5>
                 </div>
               </a>
             </div>
@@ -61,25 +61,25 @@
     <div class="expanded row">
       <div class="small-4 medium-4 large-4 columns efecto2 sin-padding">
         <div>
-          <a href="#"><img src="http://placehold.it/1000x1000"></a>
+          <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/img2.jpg"></a>
           <div class="efect2">
-            <h5>VINILOS</h5>
+            <h2>VINILOS</h2>
           </div>
         </div>
       </div>
       <div class="small-4 medium-4 large-4 columns efecto2 sin-padding">
         <div>
-          <a href="#"><img src="http://placehold.it/1000x1000"></a>
+          <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/img3.jpg"></a>
           <div class="efect2">
-            <h5>TOCA DISCOS</h5>
+            <h2>TOCA DISCOS</h2>
           </div>
         </div>
       </div>
       <div class="small-4 medium-4 large-4 columns efecto2 sin-padding">
         <div>
-          <a href="#"><img src="http://placehold.it/1000x1000"></a>
+          <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/img1.jpg"></a>
           <div class="efect2">
-            <h5>BLOG</h5>
+            <h2>BLOG</h2>
           </div>
         </div>
       </div>

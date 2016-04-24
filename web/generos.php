@@ -1,6 +1,6 @@
     <?php
     /*
-    Template Name: artistas 
+    Template Name: genero 
     */
     ?>
     <?php get_header(); ?>
@@ -17,7 +17,7 @@
                 'orderby'             => 'name',
                 'show_count'          => true,
                 'use_desc_for_title'  => false,
-                'child_of'            => 11,
+                'child_of'            => 9,
                 'title_li'            => ' '
             ) ); ?>
         </ul>

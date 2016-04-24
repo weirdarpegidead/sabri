@@ -1,14 +1,14 @@
 <?php
 /*=== Soporte para thumbnail ==*/
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'slide', 0, 0, true );
+add_image_size( 'slide' );
 add_image_size( 'home', 700, 700, true);
 /*=== sacar barra de admin ==*/
 add_filter( 'show_admin_bar', '__return_false' );
 /*=== registro de menus ===*/
 register_nav_menus ( array(
-    'menu_principal' => 'menu_header'
-    'menu_movil' => 'movil'
+    'menu_principal' => 'menu_header',
+    'menu_movil' => 'movil',
     'menu_inferior' => 'menu_footer'
     ));
 /*=== agrego una extencion para el excerpt personalizada ===
